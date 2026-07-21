@@ -22,30 +22,21 @@
     }
   </style>
 </head>
-  <audio id="scream">
-  <source src="scream.mp3" type="audio/mpeg">
-</audio>
-
-<script>
-document.addEventListener("click", () => {
-  document.getElementById("scream").play();
-}, { once: true });
-</script>
 <body>
 
 <div id="text">Loading...</div>
 
 <img id="scare" src="noFilter.webp" alt="Scary image">
 
-<audio id="sound">
-  <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
+<audio id="scream">
+  <source src="scream.mp3" type="audio/mpeg">
 </audio>
 
 <script>
 setTimeout(() => {
   document.getElementById("text").style.display = "none";
   document.getElementById("scare").style.display = "block";
-  document.getElementById("sound").play();
+  document.getElementById("scream").play();
 }, 3000);
 </script>
 
