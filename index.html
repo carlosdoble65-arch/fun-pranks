@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loading...</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      overflow: hidden;
+    }
+    #scare {
+      display: none;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+    #text {
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 40vh;
+    }
+  </style>
+</head>
+<body>
+
+<div id="text">Loading...</div>
+
+<img id="scare" src="https://picsum.photos/1200/800?grayscale" alt="Scary image">
+
+<audio id="sound">
+  <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
+</audio>
+
+<script>
+setTimeout(() => {
+  document.getElementById("text").style.display = "none";
+  document.getElementById("scare").style.display = "block";
+  document.getElementById("sound").play();
+}, 3000);
+</script>
+
+</body>
+</html>
