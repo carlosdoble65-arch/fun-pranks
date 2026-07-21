@@ -33,12 +33,12 @@
 </audio>
 
 <script>
-setTimeout(() => {
+document.addEventListener("click", () => {
   document.getElementById("text").style.display = "none";
   document.getElementById("scare").style.display = "block";
   document.getElementById("scream").play();
-}, 3000);
+});
 </script>
-
+  
 </body>
 </html>
