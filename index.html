@@ -22,6 +22,15 @@
     }
   </style>
 </head>
+  <audio id="scream">
+  <source src="scream.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener("click", () => {
+  document.getElementById("scream").play();
+}, { once: true });
+</script>
 <body>
 
 <div id="text">Loading...</div>
